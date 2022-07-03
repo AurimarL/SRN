@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {SafeAreaView, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import LoginPage from '../../pages/LoginPage';
 import Footer from './Footer';
 

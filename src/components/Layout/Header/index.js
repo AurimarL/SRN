@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {View, Text, TextInput, Image, Button} from 'react-native';
+import {View, Image, StyleSheet} from 'react-native';
 
 import NavBackButton from '../../Buttons/NavBackButton';
 
@@ -13,14 +13,16 @@ export default function Header() {
       <NavBackButton />
       <Image
         source={require('../../../assets/sota.png')}
-        style={{
-          height: 110,
-          width: 200,
-          alignSelf: 'center',
-        }}
+        style={styles.SotaLogo}
       />
     </View>
   );
 }
 
-
+const styles = StyleSheet.create({
+  SotaLogo: {
+    height: 110,
+    width: 200,
+    alignSelf: 'center',
+  },
+});
