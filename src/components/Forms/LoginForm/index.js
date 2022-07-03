@@ -5,6 +5,9 @@ import {View, Text, Pressable, StyleSheet} from 'react-native';
 import InputNumero from './InputNumero';
 import InputSenha from './InputSenha';
 
+import InputText from '../../InputText';
+import PressableButton from '../../Buttons/PressableButton';
+
 export default function LoginForm() {
   return (
     <View
@@ -19,10 +22,9 @@ export default function LoginForm() {
       <View style={styles.Input}>
         <InputSenha />
       </View>
+
       <View style={{marginTop: 20}}>
-        <Pressable style={styles.LoginButtonPressable}>
-          <Text style={styles.IniciarSessaoTxt}>iniciar sessao</Text>
-        </Pressable>
+        <PressableButton Texto="Iniciar Sessao" />
       </View>
     </View>
   );
@@ -34,11 +36,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     padding: 5,
     borderRadius: 10,
-  },
-  IniciarSessaoTxt: {
-    fontFamily: 'MontSerrat',
-    color: '#fafafa',
-    fontSize: 20,
   },
   Input: {
     flexDirection: 'row',

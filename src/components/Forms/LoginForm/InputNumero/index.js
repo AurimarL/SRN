@@ -1,8 +1,8 @@
 import * as React from 'react';
-
 import {View, TextInput} from 'react-native';
 
 import CountryPicker from 'react-native-country-picker-modal';
+import InputText from '../../../InputText';
 
 export default function InputNumero() {
   const [CountryCode, setCountryCode] = React.useState('AO');
@@ -21,11 +21,12 @@ export default function InputNumero() {
         style={{
           width: '85%',
         }}>
-        <TextInput
-          placeholder="921 234 567"
-          allowFontScaling
-          keyboardType="number-pad"
-          maxLength={9}></TextInput>
+        <InputText
+          MaxLenght={9}
+          AllowFontScalin={true}
+          PlaceHolder={'921 234 567'}
+          KeyboardType={'number-pad'}
+        />
       </View>
     </>
   );

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {SafeAreaView} from 'react-native';
-import LoginPage from '../../pages/LoginPage';
-import Footer from './Footer';
+import LoginPage from '../pages/LoginPage';
+import Footer from '../components/Footer';
 
-import Header from './Header';
+import Header from '../components/Header';
 
 export default function Layout({Children}) {
   return (

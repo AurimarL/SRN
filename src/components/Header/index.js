@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import {View, Image, StyleSheet} from 'react-native';
+import {View, Image, StyleSheet, Alert} from 'react-native';
 
-import NavBackButton from '../../Buttons/NavBackButton';
+import PressableIcon from '../PressableIcon';
 
 export default function Header() {
   return (
@@ -10,9 +10,15 @@ export default function Header() {
       style={{
         flexDirection: 'column',
       }}>
-      <NavBackButton />
+      <PressableIcon
+        Size={30}
+        IconName="angle-left"
+        Function={() => {
+          Alert.alert('Test');
+        }}
+      />
       <Image
-        source={require('../../../assets/sota.png')}
+        source={require('../../assets/sota.png')}
         style={styles.SotaLogo}
       />
     </View>
