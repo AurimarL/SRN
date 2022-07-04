@@ -4,7 +4,7 @@ import {View, Image, StyleSheet, Alert} from 'react-native';
 
 import PressableIcon from '../PressableIcon';
 
-export default function Header() {
+export default function Header({navigation}) {
   return (
     <View
       style={{
@@ -14,7 +14,7 @@ export default function Header() {
         Size={30}
         IconName="angle-left"
         Function={() => {
-          Alert.alert('Test');
+          navigation.navigate('Home');
         }}
       />
       <Image

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Layout from './src/Layout';
+import Rota from './Routes/Rota';
+
 export default function App() {
-  return <Layout></Layout>;
+  return <Rota />;
 }
